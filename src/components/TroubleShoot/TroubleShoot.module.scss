@@ -1,0 +1,35 @@
+.instructionsContainer {
+  background-color: rgb(254 242 242);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+
+    .title {
+      color: rgb(185 28 28);
+      margin-bottom: 0;
+      font-weight: 6000;
+    }
+  }
+
+  .content {
+    color: rgb(220 38 38);
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+      font-size: 1.4rem;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

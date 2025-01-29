@@ -1,0 +1,91 @@
+$camera-feed-font-color: #021413;
+$camera-feed-bg-color: #fff;
+$camera-feed-border-color: #f4f6f9;
+$camera-feed-no-video-bg-color: #eaeff4;
+$camera-feed-select-label-color: #6b7280;
+$camera-feed-select-required-color: #ef4444;
+$camera-feed-select-border-color: #e5e7eb;
+$camera-feed-select-border-hover-color: #d1d5db;
+$camera-feed-select-border-focus-color: #6b7280;
+$camera-feed-select-bg-color: #fff;
+
+.cameraFeed {
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid $camera-feed-border-color;
+  background: $camera-feed-bg-color;
+  box-shadow: 0 0.2rem 1.4rem 0 rgb(0 0 0 / 8%);
+}
+
+.header {
+  color: $camera-feed-font-color;
+  font-weight: 800;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.videoFeed {
+  width: 100%;
+  height: 20rem;
+  background-color: #000;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.noVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $camera-feed-no-video-bg-color;
+  width: 100%;
+  height: 20rem;
+}
+
+.label {
+  font-size: 1.2rem !important;
+}
+
+.cameraField {
+  margin: 2.4rem;
+}
+
+.selectCamera {
+  border-radius: 0.8rem;
+  border: 0.1rem solid #cccccc63;
+  position: relative;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background: rgb(0 0 0 / 10%);
+}
+
+.spinnerBorder {
+  width: 3rem;
+  height: 3rem;
+  border: 0.25rem solid #021413;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.srOnly {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

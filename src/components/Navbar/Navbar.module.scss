@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  padding-bottom: 0;
+
+  .logo {
+    img {
+      height: 1.2rem;
+    }
+  }
+}

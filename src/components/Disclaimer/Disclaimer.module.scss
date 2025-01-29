@@ -1,0 +1,35 @@
+.disclaimer {
+  padding: 1.6rem;
+  margin: 0 -2rem;
+  margin-bottom: -2rem;
+  position: sticky;
+  bottom: 0;
+  background: white;
+  box-shadow: 0 -0.2rem 0.4rem 0 rgb(2 16 40 / 8%);
+
+  .checkboxLabel {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  .checkbox {
+    margin-right: 1rem;
+  }
+
+  .confirmButton {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    &:disabled,
+    &.disabledButton {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
